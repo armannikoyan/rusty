@@ -87,7 +87,7 @@ function M.apply()
 	apply_highlight("PMenuSel", c.foreground, c.selection, { reverse = true })
 	apply_highlight("SignColumn", nil, nil, nil)
 	apply_highlight("ColorColumn", nil, c.selection)
-  apply_highlight("EndOfBuffer", c.foreground, nil)
+  apply_highlight("EndOfBuffer", nil, c.foreground)
 
 	-- Syntax highlights
 	apply_highlight("Type", c.orange, nil)
