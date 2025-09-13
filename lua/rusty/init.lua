@@ -86,7 +86,7 @@ function M.apply()
 	apply_highlight("PMenu", c.foreground, c.selection, nil)
 	apply_highlight("PMenuSel", c.foreground, c.selection, { reverse = true })
 	apply_highlight("SignColumn", nil, nil, nil)
-	apply_highlight("ColorColumn", nil, nil, nil)
+	apply_highlight("ColorColumn", nil, c.selection)
 
 	-- Syntax highlights
 	apply_highlight("Type", c.orange, nil)
